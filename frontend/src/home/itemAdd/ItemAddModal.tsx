@@ -1,14 +1,12 @@
 import {
   AlertDialog,
-  AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
-  AlertDialogDescription,
   AlertDialogFooter,
   AlertDialogHeader,
-  AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+import AddFrom from "./AddFrom";
 
 const ItemAddModal = () => {
   return (
@@ -17,14 +15,11 @@ const ItemAddModal = () => {
         <AlertDialogTrigger>Add Item</AlertDialogTrigger>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-            <AlertDialogDescription>
-              This action cannot be undone.
-            </AlertDialogDescription>
+            <AddFrom></AddFrom>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Add Item</AlertDialogAction>
+            <AlertDialogCancel className="w-full">Cancel</AlertDialogCancel>
+            {/* <AlertDialogAction>Add Item</AlertDialogAction> */}
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
