@@ -1,4 +1,5 @@
 import "./App.css";
+import ItemAddModal from "./home/itemAdd/itemAddModal";
 import ItemPage from "./home/items/ItemPage";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <div>
         <ItemPage></ItemPage>
+        <ItemAddModal></ItemAddModal>
       </div>
     </>
   );
